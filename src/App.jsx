@@ -246,7 +246,7 @@ function App() {
           {
             date: '25/08/2021',
             img: 'tsahal.jpg',
-            txt: `Suite a cela je m'engage dans l'armee dans la cryptage de donnees et les communications.`
+            txt: `Suite a cela je m'engage dans l'armee dans la cryptage de communications.`
           },
           {
             date: '19/09/2023',
@@ -298,6 +298,10 @@ function App() {
 
             </div>
           })}
+        </div>
+
+        <div className='bottom-page'>
+            <div className="transition"></div>
         </div>
         {headerFooter('footer')}
 

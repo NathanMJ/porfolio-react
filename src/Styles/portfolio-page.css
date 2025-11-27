@@ -125,6 +125,7 @@ body::-webkit-scrollbar {
                         transform: translateX(-50%);
                         display: flex;
                         gap: 5px;
+                        z-index: 7;
 
                         img {
                             height: 20px;
@@ -517,8 +518,10 @@ body::-webkit-scrollbar {
                 .border-container {
                     width: 150px;
                     padding-inline: 10px;
+                    min-width: 150px;
 
                     .border {
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -578,6 +581,7 @@ body::-webkit-scrollbar {
 
                     img {
                         width: 200px;
+                        max-width: 50%;
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
@@ -586,6 +590,16 @@ body::-webkit-scrollbar {
             }
         }
 
+    }
+
+    .bottom-page {
+        .transition {
+            height: 5px;
+            background: linear-gradient(rgb(204, 227, 231), rgb(33, 56, 75));
+        }
+
+        background-color: rgb(33, 56, 75);
+        height: 250px;
     }
 
 }
@@ -622,5 +636,17 @@ body::-webkit-scrollbar {
 
     50% {
         opacity: 0;
+    }
+}
+
+.div1 {
+    position: sticky;
+
+    .div2 {
+        position: absolute;
+
+        .div3 {
+            position: absolute;
+        }
     }
 }
