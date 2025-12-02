@@ -1,0 +1,17 @@
+# Dépendances Node
+/node_modules
+
+# Fichiers de cache de l'environnement de développement
+.DS_Store
+.env
+.local
+.cache
+.npm
+.npmrc
+
+# Fichiers de cache de Vite (le dossier .vite)
+.vite
+
+# Dossiers générés (Build)
+/dist
+/build
